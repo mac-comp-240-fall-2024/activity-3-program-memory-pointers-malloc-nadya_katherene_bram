@@ -29,8 +29,8 @@ void ptr_strcpy(char *s, char *t) {
 void my_strncpy(char *s, char *t, int n) {
     int i;
 
-    for(i = 0, i < n, i++){
-        s[i] = t[i]
+    for(i = 0; i < n; i++){
+        s[i] = t[i];
     } 
 
 }
