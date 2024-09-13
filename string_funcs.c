@@ -22,17 +22,35 @@ void ptr_strcpy(char *s, char *t) {
     }
 
     //Simplified Version: uncomment this to run
-    //while((*s++ = *t++) != '\0');
+    while((*s++ = *t++) != '\0');
 }
 
 /* Copies the first n characters of t to s */
 void my_strncpy(char *s, char *t, int n) {
-    // TODO: complete this definition
+    int i;
+
+    for(i = 0; i < n; i++){
+        s[i] = t[i];
+    } 
+
 }
 
 /* Concatenates t to s */
 void my_strcat(char *s, char *t) {
     // TODO: complete this definition
+    while(*s != '/0'){
+        s++;
+    }
+    while (*t != '\0'){
+        *s = *t;
+        s++;
+        t++;
+    }
+    *s = '\0';
+
+
 }
+
+
 
 
